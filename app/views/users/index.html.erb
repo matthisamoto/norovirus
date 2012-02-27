@@ -1,0 +1,19 @@
+<div id="virus">
+<div id="virus_bg"></div>
+  <div id="virus_container">
+	<div id="virus_header">
+	  <h1>NOROVIRUS</h1>
+	  <h2><%= @count %></h2>	
+	</div>
+    <%= render :partial => "users/list" %>
+  </div>
+</div>
+<div id="you">
+  <div id="you_container">
+    <div id="you_header">
+	  <h1>YOU</h1>
+	  <h2>0</h2>	
+	</div>
+  </div>
+<%= render :partial => "users/form" %>
+</div>

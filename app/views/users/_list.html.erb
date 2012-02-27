@@ -1,0 +1,8 @@
+<div id="user_list">
+<% @list.each do |l| %>
+  <div id="<%= l.id %>" class="user">
+	<div class="name"><%= l.name %> <span class="location"><%= l.location %></span></div>
+	<div class="story hidden"><%= l.story %></div>
+  </div>
+<% end %>
+</div>

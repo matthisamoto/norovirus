@@ -1,0 +1,18 @@
+<div id="user_input">
+  <div class="welcome">
+	Did you recently have a 24-hour vomit fest? From both ends? Fever? Dehydration? Congratulations, sounds like you had a norovirus! Please join the proud, recovereD and temporarily-humbled victim list.
+  </div>
+<nav>
+<%= form_for(:user, :url => {:action => 'create'}) do |f| %>
+  <ul>	
+    <li><%= f.label(:name) %> </li>
+    <li><%= f.text_field(:name) %> </li>
+	<li><%= f.label(:location) %> </li>
+	<li><%= f.text_field(:location) %> </li>
+	<li><%= f.label("Share Your Story") %> </li>
+    <li><%= f.text_area(:story) %> </li>
+    <li><%= submit_tag("submit")%></li>
+  </ul>
+<% end %>
+</nav>
+</div>
