@@ -102,7 +102,7 @@ td { vertical-align: top; }
 body, html {
   background: #eadb1b;
   width: 100%;
-  min-width: 1160px;
+  min-width: 1200px;
   height: 100%;
   font-family: "MenschRegular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -130,7 +130,7 @@ h2 {
 #virus {
   position: relative;
   background: transparent;
-  min-width: 875px;
+  min-width: 900px;
   width: 62%;
   height: 100%;
   float: left;
@@ -160,19 +160,18 @@ h2 {
   overflow: hidden;
 }
 #virus_header {
-  margin: 110px 10px 0 0;
+  margin: 150px 70px 0 0;
   float: right;
+  text-align: center;
 }
 #virus_header h1, #virus_header h2 { 
-  text-align: right; 
-  margin-right: 60px;
+  text-align: center;
 }
 #user_list {
   float: left;
   height: 100%;
   width: 200px;
-  font-family: Helvetica, Arial, sans-serif;
-
+  /* font-family: Helvetica, Arial, sans-serif; */
   outline: none;
 }
 #users {
@@ -184,7 +183,7 @@ h2 {
   border-bottom: 1px solid #eadb1b;
 }
 .user .name {
-  font-size: 120%;
+  font-size: 140%;
   font-weight: normal;
 }
 .user .name span.location {
@@ -202,7 +201,26 @@ h2 {
   color: #000;
 }
 .user:hover .name {
-  font-weight: bold;
+  font-family: "MenschBold", Helvetica, Arial, sans-serif;
+}
+#info {
+  position: absolute;
+  bottom: 25px;
+  right: 130px;
+  color: #eadb1b;
+  font-size: 130%;
+}
+#info a:link, a:visited { 
+  padding: 10px;
+  background: black;
+  color: #eadb1b;
+  text-decoration: none;
+  border: 1px solid black;
+}
+#info:hover a { 
+  background: #eadb1b; 
+  color: black; 
+  text-decoration: underline; 
 }
 
 /*  Right Side  */
@@ -222,8 +240,11 @@ h2 {
   overflow: hidden;
 }
 #you_header {
-  margin: 110px 0 0 20px;
+  margin: 150px 0 0 20px;
   float: left;
+}
+#you_header h1, #you_header h2 {
+  text-align: center;
 }
 #user_input {
   position: absolute;
@@ -250,13 +271,18 @@ input[type="text"],textarea {
 textarea { height: 4.5em; }
 input[type="submit"] {
   padding: 10px 15px;
+  border: 1px solid #eadb1b;
   margin-top: 5px;
   background: #000;
   color: #eadb1b;
-  border: none;
   outline: none;
   font-family: "MenschRegular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  background: #eadb1b;
+  color: black;
+  border: 1px solid black;
 }
 #user_input {
   z-index: 10;

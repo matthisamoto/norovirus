@@ -36,7 +36,7 @@ var List = {
   },
 
   contract: function(user) {
-    user.find(".story").hide(200, "linear", function() { user.find(".story").addClass("hidden"); List.pane.reinitialise(); });
+    user.find(".story").hide(200, "linear", function() { user.find(".story").addClass("hidden"); List.pane.reinitialise(); } );
   }
 	
 }
