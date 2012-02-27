@@ -135,6 +135,7 @@ h2 {
   height: 100%;
   float: left;
   color: #eadb1b;
+  overflow: hidden;
 }
 #virus_bg {
   left: -40px;
@@ -156,9 +157,10 @@ h2 {
   position: relative;
   height: 100%;
   z-index: 5;
+  overflow: hidden;
 }
 #virus_header {
-  margin-top: 110px;
+  margin: 110px 10px 0 0;
   float: right;
 }
 #virus_header h1, #virus_header h2 { 
@@ -167,8 +169,14 @@ h2 {
 }
 #user_list {
   float: left;
+  height: 100%;
   width: 200px;
   font-family: Helvetica, Arial, sans-serif;
+
+  outline: none;
+}
+#users {
+  outline: none;
 }
 .user {
   cursor: pointer;
@@ -189,11 +197,11 @@ h2 {
   font-size: 120%;
   margin-top: 5px;
 }
-.user.active {
+.user:hover {
   background: #eadb1b;
   color: #000;
 }
-.user.active .name {
+.user:hover .name {
   font-weight: bold;
 }
 
@@ -214,7 +222,7 @@ h2 {
   overflow: hidden;
 }
 #you_header {
-  margin-top: 110px;
+  margin: 110px 0 0 20px;
   float: left;
 }
 #user_input {
@@ -252,5 +260,5 @@ input[type="submit"] {
 }
 #user_input {
   z-index: 10;
-  font-size: 160%;
+  font-size: 130%;
 }

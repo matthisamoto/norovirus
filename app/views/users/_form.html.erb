@@ -5,11 +5,11 @@
 <nav>
 <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
   <ul>	
-    <li><%= f.label(:name) %> </li>
+    <li><%= f.label(:name, "Name (First, Last Initial)") %> </li>
     <li><%= f.text_field(:name) %> </li>
-	<li><%= f.label(:location) %> </li>
+	<li><%= f.label(:location, "Location (City, State, Country)") %> </li>
 	<li><%= f.text_field(:location) %> </li>
-	<li><%= f.label("Share Your Story") %> </li>
+	<li><label for="user_story">Share your likely-disgusting story</br>(it's okay to leave stuff out)</label> </li>
     <li><%= f.text_area(:story) %> </li>
     <li><%= submit_tag("submit")%></li>
   </ul>

@@ -2,30 +2,41 @@ var List = {
    
   setup: function() {
 	
+	var jsp_settings = {
+	  maintainPosition: true,
+	  stickToBottom: true,
+	  animateScroll: true,
+	  animateDuration: 200,
+	  animateEase: "swing",
+	  verticalDragMinHeight: 35,
+	  verticalDragMaxHeight: 150
+	}
+	
+	if( List.apply() ) {
+	  List.sp = $('#user_list').jScrollPane(jsp_settings);
+	  List.pane = List.sp.data('jsp');
+    }
+	
+  },
+
+  apply: function() {
 	$(".user").each( function() {
 	  var user = $(this);
-	  user.click( function() {
-		if (user.hasClass("active")){
-		  List.contractAll();
-		}
-		else{
-		  if (List.contractAll()) List.expand(user);
-		}
+	  user.hover( function() {
+		List.expand(user);
+	  }, function() {
+		List.contract(user);
 	  });
 	});
-	
+	return true;
   },
    
   expand: function(user) {
-	user.addClass("active").find(".story").removeClass("hidden");
+	user.find(".story").removeClass("hidden").hide().show(200,"linear", function() { List.pane.reinitialise(); } );
   },
 
-  contractAll: function() {
-    $(".user").each( function() {
-	  var user = $(this);
-	  user.removeClass("active").find(".story").addClass("hidden");
-	});
-	return true;
+  contract: function(user) {
+    user.find(".story").hide(200, "linear", function() { user.find(".story").addClass("hidden"); List.pane.reinitialise(); });
   }
 	
 }
