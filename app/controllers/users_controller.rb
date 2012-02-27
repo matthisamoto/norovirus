@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash[:message] = "Successfully Created Level"
-      redirect_to "/"
+      redirect_to root_path
     else
       render new_level_path
     end
