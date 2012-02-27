@@ -1,17 +1,16 @@
-set :application, "ups2"
+set :application, "norovirus"
 set :repository,  "git@github.com:matthisamoto/norovirus.git"
-set :port, 48375
-set :default_environment, {
-  'PATH' => "/home/matt/.rvm/rubies/ruby-1.9.2-p180/bin:/home/deploy/.rvm/gems/ruby-1.9.2-p180/bin:$PATH",
-  'RUBY_VERSION' => 'ruby 1.9.2',
-  'GEM_HOME'     => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/',
-  'GEM_PATH'     => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/',
-  'BUNDLE_PATH'  => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/'
+set :default_environment, { 
+  'PATH' => "/home/deploy/.rvm/rubies/ruby-1.9.2-p180/bin:/home/deploy/.rvm/gems/ruby-1.9.2-p180/bin:/home/deploy/.rvm/bin:$PATH",
+  'RUBY_VERSION' => 'ruby-1.9.2-p180',
+  'GEM_HOME' => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/',
+  'GEM_PATH' => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/',
+  'BUNDLE_PATH' => '/home/deploy/.rvm/gems/ruby-1.9.2-p180/'
 }
 
 set :scm, :git
 set :branch, 'master'
-set :user, 'ups2'
+set :user, 'deploy'
 
 set :use_sudo, false
 set :deploy_to, "/home/deploy/sites/norovirus"
