@@ -6,11 +6,11 @@
 <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
   <ul>	
     <li><%= f.label(:name, "Name (First, Last Initial)") %> </li>
-    <li><%= f.text_field(:name) %> </li>
+    <li><%= f.text_field(:name, :class => "user_name") %> </li>
 	<li><%= f.label(:location, "Location (City, State)") %> </li>
-	<li><%= f.text_field(:location) %> </li>
+	<li><%= f.text_field(:location, :class => "user_location") %> </li>
 	<li><label for="user_story">Share your story</br>( it's okay to leave stuff out )</label> </li>
-    <li><%= f.text_area(:story) %> </li>
+    <li><%= f.text_area(:story, :class => "user_story") %> </li>
     <li><%= submit_tag("submit")%></li>
   </ul>
 <% end %>

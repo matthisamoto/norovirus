@@ -21,6 +21,15 @@ var List = {
 	  List.pane.reinitialise();
 	});
 	
+	$('form').die().live('submit', function(e) {
+	  if( $('.user_name').val().length > 0 && $('.user_location').val().length > 0 && $('.user_story').val().length > 0 ) {
+		  
+	  } else {
+		alert("Please fill out all fields.")
+		return false;
+	  }
+	})
+	
   },
 
   apply: function() {
@@ -41,7 +50,7 @@ var List = {
 
   contract: function(user) {
     user.find(".story").hide(200, "linear", function() { user.find(".story").addClass("hidden"); List.pane.reinitialise(); } );
-  }
+  },
 	
 }
 
