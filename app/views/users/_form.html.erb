@@ -11,7 +11,16 @@
 	<li><%= f.text_field(:location, :class => "user_location") %> </li>
 	<li><label for="user_story">Share your story</br>( it's okay to leave stuff out )</label> </li>
     <li><%= f.text_area(:story, :class => "user_story") %> </li>
-    <li><%= submit_tag("submit")%></li>
+    <li><%= submit_tag("submit")%> 
+	
+		<div class="share">	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Norovirus took me down! I barfed for 24 hrs and I'm letting the world know it, dammit." data-count="none" data-url="http://norovirusoneyouzero.com">Tweet</a>
+		<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+	 	<div class="share"><a name="fb_share" type="button" share_url="http://norovirusoneyouzero.com"></a>
+		<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+		</div>
+	</li>
   </ul>
 <% end %>
 </nav>

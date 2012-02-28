@@ -102,7 +102,7 @@ td { vertical-align: top; }
 body, html {
   background: #eadb1b;
   width: 100%;
-  min-width: 900px;
+  min-width: 1020px;
   height: 100%;
   min-height: 600px;
   font-family: "MenschRegular", Helvetica, Arial, sans-serif;
@@ -116,22 +116,33 @@ h1,h2 {
   font-weight: normal;
 }
 h1 { 
-  font-size: 600%;
+  font-size: 920%;
   letter-spacing: 0.2em;
 }
 h2 {
-  font-size: 900%;
+  font-size: 1100%;
   letter-spacing: 0.2em;
   margin-top: -30px;
 }
-
+.share {
+  display: block;
+  float: right;
+  height: 34px;
+  margin-top: 4px;
+  margin-left: 5px;
+  line-height: 34px;
+  vertical-align: middle;
+}
+.share iframe {
+	margin-top: 7px;
+}
 /*  Left Side  */
 
 #virus {
   position: relative;
   background: transparent;
   min-width: 600px;
-  width: 62%;
+  width: 70%;
   height: 100%;
   min-height: 600px;
   float: left;
@@ -162,15 +173,15 @@ h2 {
   overflow: hidden;
 }
 #virus_header {
-  margin: 80px 40px 0 0;
-  float: right;
+  position: absolute;
+  margin: 100px 40px 0 0;
+  right:0;
   text-align: center;
 }
 #virus_header h1, #virus_header h2 { 
   text-align: center;
 }
 #user_list {
-  float: left;
   height: 100%;
   min-height: 600px;
   width: 180px;
@@ -242,7 +253,7 @@ a:hover {
   overflow: hidden;
 }
 #you_header {
-  margin: 80px 0 0 0;
+  margin: 100px 0 0 0;
   float: left;
 }
 #you_header h1, #you_header h2 {
