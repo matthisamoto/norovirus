@@ -33,6 +33,20 @@ var List = {
 	  }
 	})
 	
+	$("input[type=text]").each( function() {
+	  var elem = $(this)
+	  elem.click( function () {
+		elem.val("");
+	  })
+	})
+	
+	$("textarea").each( function() {
+	  var elem = $(this)
+	  elem.click( function () {
+		elem.val("");
+	  })
+	})
+	
   },
 
   apply: function() {

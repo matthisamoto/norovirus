@@ -116,11 +116,11 @@ h1,h2 {
   font-weight: normal;
 }
 h1 { 
-  font-size: 920%;
+  font-size: 80px;
   letter-spacing: 0.2em;
 }
 h2 {
-  font-size: 1100%;
+  font-size: 110px;
   letter-spacing: 0.2em;
   margin-top: -30px;
 }
@@ -174,7 +174,7 @@ h2 {
 }
 #virus_header {
   position: absolute;
-  margin: 100px 40px 0 0;
+  margin: 80px 40px 0 0;
   right:0;
   text-align: center;
 }
@@ -253,7 +253,7 @@ a:hover {
   overflow: hidden;
 }
 #you_header {
-  margin: 100px 0 0 0;
+  margin: 80px 0 0 0;
   float: left;
 }
 #you_header h1, #you_header h2 {
@@ -283,6 +283,7 @@ input[type="text"],textarea {
   padding: 5px;
   width: 250px;
   font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 textarea { height: 4.5em; }
 input[type="submit"] {
