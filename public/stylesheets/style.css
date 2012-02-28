@@ -102,11 +102,11 @@ td { vertical-align: top; }
 body, html {
   background: #eadb1b;
   width: 100%;
-  min-width: 1200px;
+  min-width: 900px;
   height: 100%;
+  min-height: 600px;
   font-family: "MenschRegular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  min-height: 800px;
 }
 h1,h2 {
   letter-spacing: 0.2em;
@@ -116,11 +116,11 @@ h1,h2 {
   font-weight: normal;
 }
 h1 { 
-  font-size: 1000%;
+  font-size: 600%;
   letter-spacing: 0.2em;
 }
 h2 {
-  font-size: 1200%;
+  font-size: 900%;
   letter-spacing: 0.2em;
   margin-top: -30px;
 }
@@ -130,10 +130,10 @@ h2 {
 #virus {
   position: relative;
   background: transparent;
-  min-width: 900px;
+  min-width: 600px;
   width: 62%;
   height: 100%;
-  min-height: 800px;
+  min-height: 600px;
   float: left;
   color: #eadb1b;
   overflow: hidden;
@@ -142,9 +142,8 @@ h2 {
   left: -40px;
   position: absolute;
   width: 100%;
-  min-height: 800px;
   height: 100%;
-  min-height: 800px;
+  min-height: 600px;
   background: #000;
   z-index: 2;
   overflow: hidden;
@@ -158,12 +157,12 @@ h2 {
 #virus_container {
   position: relative;
   height: 100%;
-  min-height: 800px;
+  min-height: 600px;
   z-index: 5;
   overflow: hidden;
 }
 #virus_header {
-  margin: 150px 70px 0 0;
+  margin: 80px 40px 0 0;
   float: right;
   text-align: center;
 }
@@ -173,8 +172,8 @@ h2 {
 #user_list {
   float: left;
   height: 100%;
-  min-height: 800px;
-  width: 200px;
+  min-height: 600px;
+  width: 180px;
   /* font-family: Helvetica, Arial, sans-serif; */
   outline: none;
 }
@@ -231,7 +230,7 @@ a:hover {
   position: relative;
   background: transparent url(/images/noro2.png) right 30px no-repeat;
   height: 100%;
-  min-height: 800px;
+  min-height: 600px;
   min-width: 300px;
   float: left;
   color: #000;
@@ -243,7 +242,7 @@ a:hover {
   overflow: hidden;
 }
 #you_header {
-  margin: 150px 0 0 20px;
+  margin: 80px 0 0 0;
   float: left;
 }
 #you_header h1, #you_header h2 {
