@@ -22,7 +22,10 @@ var List = {
 	});
 	
 	$('form').die().live('submit', function(e) {
-	  if( $('.user_name').val().length > 0 && $('.user_location').val().length > 0 && $('.user_story').val().length > 0 ) {
+	  var name  = $.trim($('.user_name').val())
+	  var loc   = $.trim($('.user_location').val())
+	  var story = $.trim($('.user_story').val())
+	  if( name.length > 0 && loc.length > 0 && story.length > 0 ) {
 		  
 	  } else {
 		alert("Please fill out all fields.")
