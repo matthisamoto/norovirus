@@ -16,6 +16,10 @@ var List = {
 	  List.sp = $('#user_list').jScrollPane(jsp_settings);
 	  List.pane = List.sp.data('jsp');
     }
+
+    $(window).resize(function() {
+	  List.pane.reinitialise();
+	});
 	
   },
 

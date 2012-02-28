@@ -1,15 +1,15 @@
 <div id="user_input">
   <div class="welcome">
-	Did you recently have a 24-hour vomit fest? From both ends? Fever? Dehydration? Congratulations, sounds like you had a norovirus! Please join the proud, recovereD and temporarily-humbled victim list.
+	Did you recently have a 24-hour vomit fest? From both ends? Fever? Dehydration? Congratulations, sounds like you had a norovirus! Add your name to the proud, recovered and temporarily-humbled victims list.
   </div>
 <nav>
 <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
   <ul>	
     <li><%= f.label(:name, "Name (First, Last Initial)") %> </li>
     <li><%= f.text_field(:name) %> </li>
-	<li><%= f.label(:location, "Location (City, State, Country)") %> </li>
+	<li><%= f.label(:location, "Location (City, State)") %> </li>
 	<li><%= f.text_field(:location) %> </li>
-	<li><label for="user_story">Share your likely-disgusting story</br>(it's okay to leave stuff out)</label> </li>
+	<li><label for="user_story">Share your story</br>(it's okay to leave stuff out)</label> </li>
     <li><%= f.text_area(:story) %> </li>
     <li><%= submit_tag("submit")%></li>
   </ul>
