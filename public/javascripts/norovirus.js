@@ -25,7 +25,7 @@ var List = {
 	  var name  = $.trim($('.user_name').val())
 	  var loc   = $.trim($('.user_location').val())
 	  var story = $.trim($('.user_story').val())
-	  if( name.length > 0 && loc.length > 0 && story.length > 0 && name.toLowerCase() != "NAME ( FIRST, LAST INITIAL )".toLowerCase()) {
+	  if( name.length > 0 && loc.length > 0 && story.length > 0 && name.toLowerCase() != "NAME ( FIRST, LAST INITIAL )".toLowerCase() && loc.toLowerCase() != "LOCATION ( CITY, STATE )".toLowerCase()) {
 		if(story.toLowerCase() == "SHARE YOUR STORY\n( IT'S OKAY TO LEAVE STUFF OUT )".toLowerCase()) $('.user_story').val("");
 		if(loc.toLowerCase() == "LOCATION ( CITY, STATE )".toLowerCase()) $('.user_location').val("");
 	  } else {
