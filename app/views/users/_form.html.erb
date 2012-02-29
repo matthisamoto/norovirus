@@ -5,8 +5,8 @@
 <nav>
 <%= form_for(:user, :url => {:action => 'create'}) do |f| %>
   <ul>
-    <li><%= f.text_field(:name, :class => "user_name", :value => "Name ( First, Last Initial )") %> </li>
-	<li><%= f.text_field(:location, :class => "user_location", :value => "Location ( City, State )") %> </li>
+    <li><%= f.text_field(:name, :class => "user_name", :value => "Name ( First, Last Initial )", :maxlength => 40) %> </li>
+	<li><%= f.text_field(:location, :class => "user_location", :value => "Location ( City, State )", :maxlength => 60) %> </li>
     <li><%= f.text_area(:story, :class => "user_story", :value => "Share your story\n( it's okay to leave stuff out )", :maxlength => 140) %> </li>
     <li><%= submit_tag("submit")%> 
 	
