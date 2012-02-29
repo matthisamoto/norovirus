@@ -7,7 +7,7 @@
   <ul>
     <li><%= f.text_field(:name, :class => "user_name", :value => "Name ( First, Last Initial )") %> </li>
 	<li><%= f.text_field(:location, :class => "user_location", :value => "Location ( City, State )") %> </li>
-    <li><%= f.text_area(:story, :class => "user_story", :value => "Share your story\n( it's okay to leave stuff out )") %> </li>
+    <li><%= f.text_area(:story, :class => "user_story", :value => "Share your story\n( it's okay to leave stuff out )", :maxlength => 140) %> </li>
     <li><%= submit_tag("submit")%> 
 	
 		<div class="share">	<a href="https://twitter.com/share" class="twitter-share-button" data-text='Join the "I just barfed for 24 hrs" victims list.' data-count="none" data-url="http://NorovirusOneYouZero.com">Tweet</a>
