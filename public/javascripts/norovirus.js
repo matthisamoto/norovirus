@@ -40,6 +40,10 @@ var List = {
 		elem.val("");
 		elem.unbind("click");
 	  })
+	  elem.focus( function () {
+		elem.val("");
+		elem.unbind("focus");
+	  })
 	})
 	
 	$("textarea").each( function() {
@@ -47,6 +51,10 @@ var List = {
 	  elem.click( function () {
 		elem.val("");
 		elem.unbind("click");
+	  })
+	  elem.focus( function () {
+		elem.val("");
+		elem.unbind("focus");
 	  })
 	})
 	
