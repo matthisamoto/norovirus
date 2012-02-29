@@ -37,6 +37,7 @@ var List = {
 	  var elem = $(this)
 	  elem.click( function () {
 		elem.val("");
+		elem.unbind("click");
 	  })
 	})
 	
@@ -44,6 +45,7 @@ var List = {
 	  var elem = $(this)
 	  elem.click( function () {
 		elem.val("");
+		elem.unbind("click");
 	  })
 	})
 	
