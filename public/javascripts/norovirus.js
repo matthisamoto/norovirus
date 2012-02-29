@@ -25,8 +25,9 @@ var List = {
 	  var name  = $.trim($('.user_name').val())
 	  var loc   = $.trim($('.user_location').val())
 	  var story = $.trim($('.user_story').val())
-	  if( name.length > 0 && loc.length > 0 && story.length > 0 ) {
-		  
+	console.log(story)
+	  if( name.length > 0 && loc.length > 0 && story.length > 0 && story.toLowerCase() != "SHARE YOUR STORY\n( IT'S OKAY TO LEAVE STUFF OUT )".toLowerCase() ) {
+		
 	  } else {
 		alert("Please fill out all fields.")
 		return false;
