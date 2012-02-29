@@ -29,7 +29,7 @@ var List = {
 		if(story.toLowerCase() == "SHARE YOUR STORY\n( IT'S OKAY TO LEAVE STUFF OUT )".toLowerCase()) $('.user_story').val("");
 		if(loc.toLowerCase() == "LOCATION ( CITY, STATE )".toLowerCase()) $('.user_location').val("");
 	  } else {
-		alert("Please fill out all fields.")
+		alert("Please fill out Name and Location fields.")
 		return false;
 	  }
 	})
